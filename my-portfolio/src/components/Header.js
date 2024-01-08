@@ -1,36 +1,56 @@
 import React, { useState, useEffect} from 'react';
 import './Header.css';
-import { TypeAnimation } from 'react-type-animation';
-const TypingEffect = ({ text, delay, type}) => {
-  const [currentText, setCurrentText] = useState(' ');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  useEffect(() => {
-    if (currentIndex < text.length) {
-      const timeout = setTimeout(() => {
-        setCurrentText(prevText => prevText + text[currentIndex]);
-        setCurrentIndex(prevIndex => prevIndex + 1);
-      }, delay);
-  
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, delay, text]);
-  if (type === "h1"){
-    return <h1>{currentText}</h1>;
-  }
-  else{
-    return <p>{currentText}</p>;
-  }
-}
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin  } from '@fortawesome/free-brands-svg-icons';
+
 
 const Header = () => {
+  const downloadCV = (file) => {
+    const link = document.createElement('a');
+    link.href = `./files/${file}`; // Replace with the actual path to your CV
+    link.download = `${file}`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    console.log(link.href)
+  };
+  const downloadFile = (file) => {
+    window.location.href = `./files/${file}`
+  }
   return (
-    
     <header id="header">
-        <div className='container'>
-            <TypingEffect text="Leevi Kauranen" delay={90} type="h1" />
-            <TypingEffect text="Upcoming ICT engineer" delay={100}  type="p"/>
-        </div>
-        
+      <div className="container">
+       
+        <h1>Leevi Kauranen</h1>
+        <span>Upcoming ICT engineer</span>
+      </div>
+      <ul id="links">
+        <li>
+          <a
+            target= "blank"
+            href="https://github.com/Karvakaula/My_Projects"
+          >
+
+          <FontAwesomeIcon icon={faGithub} /> 
+          </a> 
+          </li>
+          <li>
+          <a
+            target= "blank"
+            href="https://www.linkedin.com/in/leevi-kauranen-a600151bb/"
+          >
+
+          <FontAwesomeIcon icon={faLinkedin} /> 
+          </a> 
+          </li>
+          <li>
+          <button className="download-cv-button"  onClick={() => downloadCV('CV_Leevi.pdf')}>
+            Download CV
+          </button>
+          
+        </li>
+      </ul>
+      
     </header>
   );
 };

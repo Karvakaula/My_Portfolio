@@ -2,9 +2,16 @@
 
 #projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 5px;
   padding: 30px;
   background-color: #011C27;
   min-height: 700px;
+}
+
+@media screen and (max-width: 600px) {
+  #projects {
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+  }
 }

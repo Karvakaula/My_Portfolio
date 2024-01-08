@@ -6,7 +6,7 @@ const ProgressBar = ({ proficiency }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const animationDuration = 1000; // 1000ms or 1 second
+    const animationDuration = 2000; // 1000ms or 1 second
     const step = (proficiency / animationDuration) * 10;
 
     const interval = setInterval(() => {

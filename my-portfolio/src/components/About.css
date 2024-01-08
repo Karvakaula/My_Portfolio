@@ -6,13 +6,15 @@
     display: flex;
     flex-direction: column;
     background-color: #011C27;
-    min-height: 300px;
+    min-height: 500px;
     align-items: center;
     position: relative;
+    justify-content: space-evenly;
   }
   
   .button-container {
-   
+    top:0;
+    position: absolute;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -48,9 +50,14 @@
     padding:10px;
     height: auto;
     color:#62BEC1;
+    border: red 1px solid;
   }
   
   @media screen and (max-width: 600px) {
+    .content {
+      font-size: 12px;
+      
+    }
     .button-container {
       flex-direction: row;
       align-items: center;

@@ -1,20 +1,42 @@
 /* ProjectCard.css */
 
 .project-card {
-    background-color: #D81159;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     height: 100%;
-    border:3px solid #62BEC1;
-    color: #011c27;
+    position: relative;
+    color: #62BEC1;
+    border: 3px solid #62BEC1;
+  }
+  .image-container {
+    width: 100%; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
   }
   
   .project-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
-  
-  /* Add any additional styling as needed */
+  .GHlink{
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 5px;
+    background-color: #62bec1;
+    &:hover{
+      background-color: #62bec1b9;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .project-card {
+      width: fit-content;
+    }
+    
+  }
+
   

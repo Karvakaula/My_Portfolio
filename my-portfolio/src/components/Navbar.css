@@ -28,3 +28,15 @@
         border-bottom-color: #D81159;
     }
 }
+@media screen and (max-width: 600px) {
+    #nav button {
+      
+        &:hover {
+            border-bottom-color: #D81159;
+          }
+          
+        &.active{
+            border-bottom-color: #D81159;
+        }
+    }
+  }

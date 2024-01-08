@@ -24,3 +24,9 @@
       box-shadow: -20px 0 20px #5e61ff;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .main{
+      max-width: 100%;
+    }
+  }

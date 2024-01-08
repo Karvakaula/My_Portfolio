@@ -1,15 +1,14 @@
 #header{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:center;
     width: 100%;
     height: 400px;
     background-color: #011C27;
     color:#62BEC1;
-    
-}
+    border:1px solid red;
+}   
 .container{
     text-align: left;
     width: fit-content;
@@ -19,22 +18,60 @@
     border-left: #D81159 3px solid ;
     border-top: #D81159 2px solid ;
     transition: 2s ease;
+    padding:0 10px;
+    border:1px solid red;
 }
 .container:hover{
     border-left: #62BEC1 3px solid ;
     border-top: #62BEC1 2px solid ;
-    
+  
 }
 
-.container2{
-    text-align: left;
-    width: 300px;
-    font-size: xx-large;
-    margin-left: 20px;
-    position: relative;
-    font-size: smaller;
-    
-}
 .container h1{
     font-weight: 300px;
 }
+#links{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.5em;
+    width: auto;
+    transition: 2s ease;
+}
+#links li{
+    padding:0 5px;
+    
+    &:hover{
+        transform: 2s ease;
+        color:#D81159
+    }
+}
+#links li a{
+    color: #62BEC1;
+
+    &:hover{
+        color:#D81159
+    }
+}
+
+#downloads{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.5em;
+    width: auto;
+    transition: 2s ease;
+    position: relative;
+}
+@media (max-width: 767px) {
+    .container{
+        text-align: left;
+        width: fit-content;
+        font-size: large;
+        margin-left: 20px;
+        position: relative;
+        border-left: #D81159 3px solid ;
+        border-top: #D81159 2px solid ;
+        transition: 2s ease;
+    }
+  }

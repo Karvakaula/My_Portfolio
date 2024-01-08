@@ -19,6 +19,7 @@ const Portfolio = () => {
       <div className="app">
       <Navbar sections={sections} />
       <Main>   
+        
         <Header />
         <About />
         <Skills />
