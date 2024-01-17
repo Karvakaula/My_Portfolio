@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import './Navbar.css';
 
-const Navbar = ({ sections }) => {
-  const [activeSection, setActiveSection] = useState(null);
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
+const Navbar = ({ sections, onPageChange  }) => {
+  const [activeSection, setActiveSection] = useState('Home');
+  const changeSection = (section) => {
+    setActiveSection(section);
   };
-
+  
   const handleSetActive = (to) => {
     setActiveSection(to);
     const button = document.getElementById(`button-${to}`);
@@ -42,9 +42,10 @@ const Navbar = ({ sections }) => {
           <button id={`button-${section.id}`}>{section.label}</button>
         </Link>
       ))}
-      {/* Add more links for other sections as needed */}
+      
     </nav>
   );
 };
+
 
 export default Navbar;

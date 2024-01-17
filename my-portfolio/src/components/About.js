@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './About.css';
 import { TypeAnimation } from 'react-type-animation';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('Hello');
   const [sectionContent, setSectionContent] = useState({
-    Hello: 'Hey! my name is Leevi Kauranen. Im a second year information - and communication technology student. Im looking for a internship position for summer 2024 where i can get some valuable work experience and develope my skills.',
-    About: 'Im 25 year old student living in Jyväskylä. On my freetime i enjoy listening to music, collecting vinyl records, working out and playing ukulele. As a person im positive and open minded, i try to spread that positivity around as mutch as i can.',
-    
+    Hello: 'Hey! my name is Leevi Kauranen, also known as Lele. Im a second year information - and communication technology student. Im looking for a internship position for summer 2024 where i can get some valuable work experience and develope my skills.',
+    About: 'Im 25 year old student living in Jyväskylä. On my freetime i enjoy listening to music, collecting vinyl records, working out and playing ukulele. Im very positive dude and i try to spread that positivity around. I enjoy learning new things and i get a rush from self development, thats one of the main things i love about tech industry, its always growing and pushing to learn',
+    Future: 'I,m aiming to graduate in early 2026, my main focus right now is on web dev but im also very interested in cybersecurity and programming. Right now learning React JS and ethical hacking. '
   });
   
   const [resetAnimation, setResetAnimation] = useState(false);
@@ -17,8 +16,6 @@ const About = () => {
     setActiveTab(tab);
     setResetAnimation(true);
   };
-
-  
   const onAnimationComplete = () => {
     setResetAnimation(false);
   };
@@ -36,7 +33,7 @@ const About = () => {
           </button>
         ))}
       </div>
-
+          
       <div className="content">
       <p><TypeAnimation
         key={activeTab} 

@@ -1,55 +1,63 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin  } from '@fortawesome/free-brands-svg-icons';
-
+import profileImage from './imgs/logo.png'; 
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Slide } from "react-swift-reveal";
 
 const Header = () => {
-  const downloadCV = (file) => {
-    const link = document.createElement('a');
-    link.href = `./files/${file}`; // Replace with the actual path to your CV
-    link.download = `${file}`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    console.log(link.href)
-  };
-  const downloadFile = (file) => {
-    window.location.href = `./files/${file}`
-  }
+  const [imageAnimationDone, setImageAnimationDone] = useState(false);
+
+  useEffect(() => {
+    // Set the state to true after the image animation is done
+    setTimeout(() => {
+      setImageAnimationDone(true);
+    },800); // Adjust the duration according to your image animation duration
+  }, []);
   return (
-    <header id="header">
-      <div className="container">
-       
-        <h1>Leevi Kauranen</h1>
-        <span>Upcoming ICT engineer</span>
+   
+      
+      <header id="header">
+      <div className="infocontainer_top">
+      <Slide left duration={700} delay={0} >
+      <img id="profile-image" src={profileImage} alt="Profile" />
+      </Slide>
+            <Slide right duration={700} delay={0}>
+              <span>Upcoming ICT engineer</span>
+              </Slide>
       </div>
-      <ul id="links">
-        <li>
-          <a
-            target= "blank"
-            href="https://github.com/Karvakaula/My_Projects"
-          >
-
-          <FontAwesomeIcon icon={faGithub} /> 
-          </a> 
-          </li>
-          <li>
-          <a
-            target= "blank"
-            href="https://www.linkedin.com/in/leevi-kauranen-a600151bb/"
-          >
-
-          <FontAwesomeIcon icon={faLinkedin} /> 
-          </a> 
-          </li>
-          <li>
-          <button className="download-cv-button"  onClick={() => downloadCV('CV_Leevi.pdf')}>
-            Download CV
-          </button>
-          
-        </li>
-      </ul>
+      <div className="infocontainer_bott">
+      
+      
+      
+            {imageAnimationDone && (
+              <>
+              <Slide right duration={700} delay={0}>
+              <ul id="links">
+              <li>
+              <a target="_blank" href="https://github.com/Karvakaula/My_Projects" rel="noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </li>
+              
+            
+            
+              <li>
+            <a target="_blank" href="https://www.linkedin.com/in/leevi-kauranen-a600151bb/" rel="noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            </li>
+            
+             
+             
+        </ul>
+        <span ><FontAwesomeIcon icon={faEnvelope} /> Leevi.kauranen@gmail.com</span>
+        </Slide>
+        </>
+             )}
+             
+      </div>
       
     </header>
   );

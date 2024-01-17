@@ -1,10 +1,15 @@
 // ProjectCard.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './ProjectCard.css'; 
+import { Slide} from "react-swift-reveal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const ProjectCard = ({ project }) => {
+  const [flip, setFlip] = useState(false)
+  
   const renderImage = () => {
     if (project.img) {
       // If the project has an 'img' attribute, render the background image
@@ -16,30 +21,36 @@ const ProjectCard = ({ project }) => {
         <div
           className="image-container"
           style={backgroundImageStyle}
-          onLoad={handleImageLoad}
+         
         />
       );
     }
   };
-const handleImageLoad = () => {
-  console.log("Image loaded successfully");
-};
+
 
   console.log(project.img)
   return (
+    <Slide left duration={300} delay={0} >
     <motion.div
-      className="project-card"
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
+      className={`project-card ${flip ? "flip" : ""}`}
+
+      onClick={() => setFlip(!flip)}
     >
-      {renderImage()}
       
+      <div className='front' onClick={() => setFlip(!flip)}>
+      {renderImage()}
       <h3>{project.title}</h3>
+      <span style={{ opacity:'50%' }}>click to flip</span>
+      </div>
+      <div className='back' onClick={() =>setFlip(!flip)}>
       <p>{project.description}</p>
-      <a href={project.link} target="_blank" rel="noopener noreferrer">
-        <button className='GHlink'>GitHub</button>
-      </a>
+      <a target="_blank" href={project.link} rel="noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+        </a>
+      </div>
+      
     </motion.div>
+    </Slide>
   );
 };
 

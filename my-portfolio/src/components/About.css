@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     background-color: #011C27;
+    /* background-color: #011C27; */
     min-height: 500px;
     align-items: center;
     position: relative;
@@ -19,11 +20,11 @@
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    
   }
   
   .tab-button {
     color: #62BEC1;
+    /*color:#404040;*/
     border: none;
     padding: 10px 20px;
     margin: 0 10px;
@@ -32,7 +33,7 @@
     background: none;
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.3s ease;
-  
+    font-weight: bold;
     &:hover {
         border-bottom-color: #D81159;
       }
@@ -45,12 +46,13 @@
   .content {
     font-size: 18px;
     line-height: 1.6;
-    width: 60%;
+    text-align: left;
+    width: 80%;
     text-align: left;
     padding:10px;
-    height: auto;
-    color:#62BEC1;
-    border: red 1px solid;
+    min-height: 300px;
+    color: #62BEC1;
+    
   }
   
   @media screen and (max-width: 600px) {

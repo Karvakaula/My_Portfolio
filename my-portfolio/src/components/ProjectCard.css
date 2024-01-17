@@ -1,14 +1,53 @@
 /* ProjectCard.css */
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: 200ms;
     height: 100%;
     position: relative;
-    color: #62BEC1;
-    border: 3px solid #62BEC1;
+    color: #62bec1;
+    border: 3px solid #62bec16e;
+    /* background-color: #011C27 ; */
+    background-color: #011C27;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0))
+      translateY(var(--translate-y, 0));
+    width: 30em;
+    &:hover{
+      --translate-y:-20px;
+    }
+  }
+ a{
+  color:rgb(194, 194, 194);
+  font-size: 1.7em;
+  transition: 1.5s ease;
+  &:hover{
+    color:#b9f0f1;
+  }
+ }
+  .project-card.flip{
+    --rotate-y:180deg;
+  }
+  .project-card .front,
+  .project-card .back {
+    width: 100%;
+    backface-visibility: hidden;
+  }
+  .project-card .back {
+    transform: rotateY(180deg);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
   }
   .image-container {
     width: 100%; /* Adjust the width as needed */
@@ -24,17 +63,18 @@
   }
   .GHlink{
     border: none;
-    position: absolute;
+    padding:5px;
     bottom: 10px;
     border-radius: 5px;
     background-color: #62bec1;
+    margin-top: auto; 
     &:hover{
       background-color: #62bec1b9;
     }
   }
   @media screen and (max-width: 600px) {
     .project-card {
-      width: fit-content;
+      width: 20em;
     }
     
   }

@@ -1,12 +1,16 @@
 /* ProjectsGrid.css */
 
 #projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  /*grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));*/
+  flex-direction: column;
+  align-items: center;
   gap: 5px;
   padding: 30px;
-  background-color: #011C27;
+ /* background-color: #011C27;*/
+  /*background-color: #f0eeee;*/
   min-height: 700px;
+  width: 100%;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,9 +1,9 @@
 .main {
-    max-width: 70%; /* Adjust as needed */
+    max-width: 85%; /* Adjust as needed */
     margin: auto;
-    
     box-sizing: border-box;
     background-color:#011C27 ;
+    /*background-color: #aaaaaa;*/
     height: auto;
     position: relative; /* Position relative for absolute positioning of gradient border */
     overflow: hidden; /* Ensure the gradient border does not overflow content */
