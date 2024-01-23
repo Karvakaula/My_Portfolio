@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/My_Portfolio/static/css/main.35b5a1aa.css",
-    "main.js": "/My_Portfolio/static/js/main.910fcdc9.js",
+    "main.css": "/My_Portfolio/static/css/main.53f62fae.css",
+    "main.js": "/My_Portfolio/static/js/main.95eaa335.js",
     "static/js/787.2dcca737.chunk.js": "/My_Portfolio/static/js/787.2dcca737.chunk.js",
     "static/media/CarRepair.png": "/My_Portfolio/static/media/CarRepair.a7f3929fb1ae9a9189e0.png",
+    "static/media/headimg.jpg": "/My_Portfolio/static/media/headimg.7961e2ae9a292ab5acd7.jpg",
     "static/media/mina.jpg": "/My_Portfolio/static/media/mina.d003818476fced3f16c2.jpg",
     "static/media/Bookreview.png": "/My_Portfolio/static/media/Bookreview.67dbf74ac391e6859a7d.png",
     "static/media/portfolio.png": "/My_Portfolio/static/media/portfolio.f898c5d62ac9691c5665.png",
     "static/media/Pyth.jpg": "/My_Portfolio/static/media/Pyth.349c9396902942b5f1e7.jpg",
     "static/media/logo.png": "/My_Portfolio/static/media/logo.953c38f353aa50881fd9.png",
     "index.html": "/My_Portfolio/index.html",
-    "main.35b5a1aa.css.map": "/My_Portfolio/static/css/main.35b5a1aa.css.map",
-    "main.910fcdc9.js.map": "/My_Portfolio/static/js/main.910fcdc9.js.map",
+    "main.53f62fae.css.map": "/My_Portfolio/static/css/main.53f62fae.css.map",
+    "main.95eaa335.js.map": "/My_Portfolio/static/js/main.95eaa335.js.map",
     "787.2dcca737.chunk.js.map": "/My_Portfolio/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35b5a1aa.css",
-    "static/js/main.910fcdc9.js"
+    "static/css/main.53f62fae.css",
+    "static/js/main.95eaa335.js"
   ]
 }
