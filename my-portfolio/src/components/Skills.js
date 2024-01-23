@@ -7,6 +7,11 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 import './Skills.css'; // Don't forget to create this CSS file for styling
 import ProgressBar from './ProgressBar';
 import { motion, AnimatePresence } from 'framer-motion';
+import { SiTailwindcss } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+
 
 const frontData = [
     {
@@ -20,9 +25,9 @@ const frontData = [
         proficiency: 75,
       },
       {
-        name: 'JavaScript',
-        icon: <FontAwesomeIcon icon={faJs} />,
-        proficiency: 60,
+        name: 'TailwindCSS',
+        icon: <SiTailwindcss /> ,
+        proficiency: 35,
       },
       {
         name: 'React',
@@ -37,6 +42,16 @@ const backData = [
       name: 'Python',
       icon: <FontAwesomeIcon icon={faPython} />,
       proficiency: 70,
+    },
+    {
+      name: 'JavaScript',
+      icon: <FontAwesomeIcon icon={faJs} />,
+      proficiency: 60,
+    },
+    {
+      name: 'TypeScript',
+      icon: <SiTypescript />,
+      proficiency: 35,
     },
     {
       name: 'NodeJS',
@@ -54,13 +69,13 @@ const backData = [
 const Databases = [
   {
     name: 'Mysql',
-    icon: <FontAwesomeIcon icon={faDatabase} />,
+    icon: <SiMysql />,
     proficiency: 65,
   },
   {
     name: 'MongoDB',
-    icon: <FontAwesomeIcon icon={faDatabase} />,
-    proficiency: 70,
+    icon: <SiMongodb />,
+    proficiency: 60,
   },
   
   

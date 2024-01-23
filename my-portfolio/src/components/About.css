@@ -33,7 +33,7 @@
     background: none;
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.3s ease;
-    font-weight: bold;
+    font-weight: normal;
     &:hover {
         border-bottom-color: #D81159;
       }
@@ -52,7 +52,8 @@
     padding:10px;
     min-height: 300px;
     color: #62BEC1;
-    
+    background-color: #011923;
+    border-radius: 5px;
   }
   
   @media screen and (max-width: 600px) {

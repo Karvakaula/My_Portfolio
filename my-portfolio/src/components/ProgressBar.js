@@ -6,7 +6,7 @@ const ProgressBar = ({ proficiency }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const animationDuration = 2000; // 1000ms or 1 second
+    const animationDuration = 2000;
     const step = (proficiency / animationDuration) * 10;
 
     const interval = setInterval(() => {
@@ -24,9 +24,11 @@ const ProgressBar = ({ proficiency }) => {
 
   return (
     <div className="progress-bar" style={{ width: '100px' }}>
+      
       <div className="progress" style={{ width: `${progress}%` }}>
-        <p>{Math.round(progress)}%</p>
+      <p>{Math.round(progress)}%</p>
       </div>
+      
     </div>
   );
 };

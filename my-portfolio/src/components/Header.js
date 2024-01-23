@@ -5,7 +5,7 @@ import { faGithub, faLinkedin  } from '@fortawesome/free-brands-svg-icons';
 import profileImage from './imgs/logo.png'; 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Slide } from "react-swift-reveal";
-
+import headimg from './imgs/headimg.jpg';
 const Header = () => {
   const [imageAnimationDone, setImageAnimationDone] = useState(false);
 
@@ -56,7 +56,8 @@ const Header = () => {
         </Slide>
         </>
              )}
-             
+             <a id="cv" href="/CV_leevi_uusi.pdf" download>Download CV</a>
+
       </div>
       
     </header>

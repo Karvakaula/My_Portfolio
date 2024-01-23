@@ -28,6 +28,8 @@ const Navbar = ({ sections, onPageChange  }) => {
 
   return (
     <nav id="nav">
+      <p>Leevi Kauranen</p>
+      <div id="container">
       {sections.map((section) => (
         <Link
           key={section.id}
@@ -42,7 +44,7 @@ const Navbar = ({ sections, onPageChange  }) => {
           <button id={`button-${section.id}`}>{section.label}</button>
         </Link>
       ))}
-      
+      </div>
     </nav>
   );
 };

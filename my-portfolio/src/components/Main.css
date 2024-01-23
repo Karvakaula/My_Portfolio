@@ -1,29 +1,16 @@
 .main {
-    max-width: 85%; /* Adjust as needed */
+    max-width: 100%; 
     margin: auto;
     box-sizing: border-box;
-    background-color:#011C27 ;
-    /*background-color: #aaaaaa;*/
-    height: auto;
-    position: relative; /* Position relative for absolute positioning of gradient border */
-    overflow: hidden; /* Ensure the gradient border does not overflow content */
     
-    /*border-image: linear-gradient(to bottom, #5e61ff, #75DDDD, #004346);
-    border-image-slice: 1;
-    animation: gradientAnimation 6s infinite linear; 
-    box-shadow: -20px 0 20px #5e61ff; */
+
+    height: auto;
+    position: relative;
+    overflow: hidden; 
+    
 }
   
-  @keyframes gradientAnimation {
-    0%, 100% {
-      border-image-source: linear-gradient(to top, #5e61ff, #75DDDD, #004346);
-      box-shadow: -20px 0 20px rgba(31, 171, 137, 0.7);
-    }
-    50% {
-      border-image-source: linear-gradient(to bottom, #5e61ff, #75DDDD, #004346);
-      box-shadow: -20px 0 20px #5e61ff;
-    }
-  }
+  
 
   @media screen and (max-width: 600px) {
     .main{

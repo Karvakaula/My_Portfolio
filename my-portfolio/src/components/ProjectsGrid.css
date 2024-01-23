@@ -1,10 +1,9 @@
 /* ProjectsGrid.css */
 
 #projects {
-  display: flex;
-  /*grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));*/
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  background-color: #011C27;
   gap: 5px;
   padding: 30px;
  /* background-color: #011C27;*/
