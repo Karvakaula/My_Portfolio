@@ -1,5 +1,5 @@
 #nav {
-    color: whitesmoke;
+    color: gold;
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -23,24 +23,23 @@
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.5s ease;
     font-weight: bold;*/
-    padding: 15px; /* Increase padding for better touch usability */
+    padding: 15px;
     background: none;
     border: none;
-    color: #62BEC1;
+    color: whitesmoke;
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.7s ease;
     font-weight: normal;
-    text-align: center; /* Center text in the sidebar */
+    text-align: center;
     width: 10;
-    /*transform: rotate(270deg);
-    white-space: nowrap;*/
+    font-size:large;
     &:hover {
-        border-bottom-color: #D81159;
+        border-bottom-color: gold;
       }
       
     &.active{
-        border-bottom-color: #D81159;
+        border-bottom-color: gold;
     }
 }
 @media screen and (max-width: 600px) {
@@ -48,24 +47,14 @@
         flex-direction: row; 
         width: 100%;
         height: auto;
-        
         padding: 0 10px; 
     }
     
-      #nav button {
+    #nav button {
+        font-size:medium;
         padding: 10px; 
         width: auto; 
-        transform: rotate(0deg);
+        border-bottom: 2px solid transparent;
     }
     
-    #nav button {
-      
-        &:hover {
-            border-bottom-color: #D81159;
-          }
-          
-        &.active{
-            border-bottom-color: #D81159;
-        }
-    }
   }

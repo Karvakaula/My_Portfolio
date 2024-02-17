@@ -2,18 +2,18 @@ import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin  } from '@fortawesome/free-brands-svg-icons';
-import profileImage from './imgs/logo.png'; 
+import profileImage from './imgs/logo2.png'; 
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Slide } from "react-swift-reveal";
-import headimg from './imgs/headimg.jpg';
+
 const Header = () => {
   const [imageAnimationDone, setImageAnimationDone] = useState(false);
 
   useEffect(() => {
-    // Set the state to true after the image animation is done
+   
     setTimeout(() => {
       setImageAnimationDone(true);
-    },800); // Adjust the duration according to your image animation duration
+    },800);
   }, []);
   return (
    
@@ -24,7 +24,7 @@ const Header = () => {
       <img id="profile-image" src={profileImage} alt="Profile" />
       </Slide>
             <Slide right duration={700} delay={0}>
-              <span>Upcoming ICT engineer</span>
+              <span REFL="Upcoming ICT engineer">Upcoming ICT engineer</span>
               </Slide>
       </div>
       <div className="infocontainer_bott">
@@ -53,10 +53,11 @@ const Header = () => {
              
         </ul>
         <span ><FontAwesomeIcon icon={faEnvelope} /> Leevi.kauranen@gmail.com</span>
+        
         </Slide>
         </>
              )}
-             <a id="cv" href="/CV_leevi_uusi.pdf" download>Download CV</a>
+             
 
       </div>
       

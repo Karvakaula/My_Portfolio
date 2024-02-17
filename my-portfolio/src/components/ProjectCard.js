@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
   
   const renderImage = () => {
     if (project.img) {
-      // If the project has an 'img' attribute, render the background image
+     
       const backgroundImageStyle = {
         backgroundImage: `url(${require(`${project.img}`)})`,
       };
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
       <div className='front' onClick={() => setFlip(!flip)}>
       {renderImage()}
       <h3>{project.title}</h3>
-      <span style={{ opacity:'50%' }}>click to flip</span>
+      <span style={{ opacity:'50%',color:'gold' }}>click to flip</span>
       </div>
       <div className='back' onClick={() =>setFlip(!flip)}>
       <p>{project.description}</p>

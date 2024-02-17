@@ -8,7 +8,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: 200ms;
-    height: 100%;
+    height: auto;
     position: relative;
     color: #62bec1;
     border: 3px solid #62bec16e;
@@ -17,7 +17,7 @@
     transform-style: preserve-3d;
     transform: perspective(1000px) rotateY(var(--rotate-y, 0))
       translateY(var(--translate-y, 0));
-    max-width: 30em;
+    width: 20em;
     &:hover{
       --translate-y:-20px;
     }
@@ -27,7 +27,7 @@
   font-size: 1.7em;
   transition: 1.5s ease;
   &:hover{
-    color:#b9f0f1;
+    color:gold;
   }
  }
   .project-card.flip{
@@ -65,11 +65,8 @@
     padding:5px;
     bottom: 10px;
     border-radius: 5px;
-    background-color: #62bec1;
     margin-top: auto; 
-    &:hover{
-      background-color: #62bec1b9;
-    }
+
   }
   @media screen and (max-width: 600px) {
     .project-card {

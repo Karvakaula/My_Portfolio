@@ -17,22 +17,22 @@ const frontData = [
     {
         name: 'HTML',
         icon: <FontAwesomeIcon icon={faHtml5} />,
-        proficiency: 95,
+        proficiency: 'Advanced',
       },
       {
         name: 'CSS',
         icon: <FontAwesomeIcon icon={faCss3} />,
-        proficiency: 75,
+        proficiency: 'Advanced',
       },
       {
         name: 'TailwindCSS',
         icon: <SiTailwindcss /> ,
-        proficiency: 35,
+        proficiency: 'Beginner',
       },
       {
         name: 'React',
         icon: <FontAwesomeIcon icon={faReact} />,
-        proficiency: 45,
+        proficiency: 'Intermediate',
       }
       
       
@@ -41,27 +41,27 @@ const backData = [
     {
       name: 'Python',
       icon: <FontAwesomeIcon icon={faPython} />,
-      proficiency: 70,
+      proficiency: 'Good',
     },
     {
       name: 'JavaScript',
       icon: <FontAwesomeIcon icon={faJs} />,
-      proficiency: 60,
+      proficiency: 'Good',
     },
     {
       name: 'TypeScript',
       icon: <SiTypescript />,
-      proficiency: 35,
+      proficiency:'beginner',
     },
     {
       name: 'NodeJS',
       icon: <FontAwesomeIcon icon={faNode} />,
-      proficiency: 65,
+      proficiency: 'Intermediate',
     },
     {
       name: 'Node Express',
       icon: <FontAwesomeIcon icon={faNode} />,
-      proficiency: 65,
+      proficiency: 'Good',
     },
     
     
@@ -70,12 +70,12 @@ const Databases = [
   {
     name: 'Mysql',
     icon: <SiMysql />,
-    proficiency: 65,
+    proficiency: 'Intermediate',
   },
   {
     name: 'MongoDB',
     icon: <SiMongodb />,
-    proficiency: 60,
+    proficiency: 'Intermediate',
   },
   
   
@@ -111,7 +111,8 @@ const Skills = () => {
               >
                 <p className='skill-icon'>{skill.icon}</p>
                 <p className="skill-name">{skill.name}</p>
-                <ProgressBar proficiency={skill.proficiency} />
+                {/*<ProgressBar proficiency={skill.proficiency} />*/}
+                <p className='knowledge'>{skill.proficiency}</p>
               </motion.div>
             ))}
           </AnimatePresence>
@@ -136,7 +137,7 @@ const Skills = () => {
               >
                 <p className='skill-icon'>{skill.icon}</p>
                 <p className="skill-name">{skill.name}</p>
-                <ProgressBar proficiency={skill.proficiency} />
+                <p className='knowledge'>{skill.proficiency}</p>
               </motion.div>
             ))}
           </AnimatePresence>
@@ -161,7 +162,7 @@ const Skills = () => {
               >
                 <p className='skill-icon'>{skill.icon}</p>
                 <p className="skill-name">{skill.name}</p>
-                <ProgressBar proficiency={skill.proficiency} />
+                <p className='knowledge'>{skill.proficiency}</p>
               </motion.div>
             ))}
           </AnimatePresence>

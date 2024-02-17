@@ -5,9 +5,19 @@ import { TypeAnimation } from 'react-type-animation';
 const About = () => {
   const [activeTab, setActiveTab] = useState('Hello');
   const [sectionContent, setSectionContent] = useState({
-    Hello: 'Hey! my name is Leevi Kauranen, also known as Lele. Im a second year information - and communication technology student. Im looking for a internship position for summer 2024 where i can get some valuable work experience and develope my skills.',
-    About: 'Im 25 year old student living in Jyväskylä. On my freetime i enjoy listening to music, collecting vinyl records, working out and playing ukulele. Im very positive dude and i try to spread that positivity around. I enjoy learning new things and i get a rush from self development, thats one of the main things i love about tech industry, its always growing and pushing to learn',
-    Future: 'I,m aiming to graduate in 2025, my main focus right now is on web dev but im also very interested in cybersecurity and programming. Right now learning React JS, TS and ethical hacking. '
+    Hello: `"At a certain level, it becomes less about skill and more about being opem. To the world, to yourself, to other people."
+    That was quote from the show "The Bear". I think it applies to everything in life, things that teach us the most are usually around us, in the world.
+    It's wonderful how much we can learn, just by paying attention to our surroundings and people around us.
+    My name is Leevi Kauranen, also known as Lele. I am a second-year student pursuing a degree in Information and Communication Technology. I am currently seeking an internship position
+    for the summer of 2024 to gain valuable work experience 
+    and what i described on the beginning of this text, an environment to learn from. `,
+    About: `Im 25 year old student living in Jyväskylä. On my freetime i enjoy listening to music, collecting vinyl records, working out and playing ukulele.
+     My new years resolution for 2024 was to read more books.
+      Im also really into photography and would really like to get into that scene someday.
+      `,
+    Future: `I am on track to graduate in 2025, with my primary focus being on development and cybersecurity. 
+    I am currently refining my skills in React JS, TypeScript, docker, and ethical hacking. 
+    My goal is to contribute effectively and adapt swiftly to emerging challenges in the ever-changing tech industry." `
   });
   
   const [resetAnimation, setResetAnimation] = useState(false);

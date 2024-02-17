@@ -7,6 +7,7 @@ body {
   font-family: "Montserrat", sans-serif; 
   background-color: #011C27;
   font-weight: normal;
+  
 }
 
 html {
@@ -18,9 +19,13 @@ html {
 }
 
 .app {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   overflow-x: hidden;
   background-repeat:no-repeat;
-  background-size: cover;
+  
   background-attachment: fixed;
 }
 
@@ -42,11 +47,12 @@ html {
     opacity: 1;
   }
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px) {
+  .app{
+    background-attachment: fixed ;
+    background-size: cover;
+    background-repeat:no-repeat;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
 }

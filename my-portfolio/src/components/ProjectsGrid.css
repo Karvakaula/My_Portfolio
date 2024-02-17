@@ -3,13 +3,14 @@
 #projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  background-color: #011C27;
+  background-color: #011c2784;
   gap: 5px;
   padding: 30px;
  /* background-color: #011C27;*/
   /*background-color: #f0eeee;*/
-  min-height: 700px;
+  min-height: 600px;
   width: 100%;
+  justify-items: center;
 }
 
 @media screen and (max-width: 600px) {
