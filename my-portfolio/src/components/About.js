@@ -5,8 +5,8 @@ import { TypeAnimation } from 'react-type-animation';
 const About = () => {
   const [activeTab, setActiveTab] = useState('Hello');
   const [sectionContent, setSectionContent] = useState({
-    Hello: `"At a certain level, it becomes less about skill and more about being opem. To the world, to yourself, to other people."
-    That was quote from the show "The Bear". I think it applies to everything in life, things that teach us the most are usually around us, in the world.
+    Hello: `"At a certain level, it becomes less about skill and more about being open. To the world, to yourself, to other people."
+    That was quote from the show "The Bear". I love that quote from The bear, as i think it applies to everything in life, things that teach us the most are usually around us, in the world.
     It's wonderful how much we can learn, just by paying attention to our surroundings and people around us.
     My name is Leevi Kauranen, also known as Lele. I am a second-year student pursuing a degree in Information and Communication Technology. I am currently seeking an internship position
     for the summer of 2024 to gain valuable work experience 

@@ -9,10 +9,10 @@ const projects = [
   // Array of project data
   {
     id: 1,
-    title: 'Book review page',
-    description: 'This app was my final project for fullstack course, during it i learned alot about usind Node Express, Api endpoints, MongoDB, a little bit about user authentication and password encryption',
-    link: 'https://github.com/Karvakaula/My_Projects/tree/main/Fullstack/Harjoitusty%C3%B6 ',
-    img: './imgs/Bookreview.png',
+    title: 'Bookreview page 2.0',
+    description: 'Recreating bookreview page with react frontend',
+    link: 'https://github.com/Karvakaula/My_Projects/tree/main/Bookreview2.0/bookreview',
+    img: './imgs/bookreview2.0.png',
   },
   {
     id: 2,
@@ -30,10 +30,10 @@ const projects = [
   },
   {
     id: 4,
-    title: '!UPCOMING! Book review page 2.0',
-    description: 'Recreating bookreview page with react frontend',
-    link: 'https://github.com/Karvakaula/My_Projects/tree/main/Bookreview2.0/bookreview',
-    img: './imgs/bookreview2.0.png',
+    title: 'Book review page',
+    description: 'This app was my final project for fullstack course, during it i learned alot about usind Node Express, Api endpoints, MongoDB, a little bit about user authentication and password encryption',
+    link: 'https://github.com/Karvakaula/My_Projects/tree/main/Fullstack/Harjoitusty%C3%B6 ',
+    img: './imgs/Bookreview.png',
   },
   {
     id: 5,
